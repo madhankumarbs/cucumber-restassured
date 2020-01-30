@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite" allow-return-values="true"
+	verbose="1" thread-count="1" parallel="tests"
+	configfailurepolicy="continue">
+<!-- 	<listeners>
+		<listener class-name="listeners.TestListener" />
+	</listeners> -->
+	<test name="Regression Test">
+		<parameter name="environment" value="${test.ENV}" />
+		<parameter name="apiver" value="${apiver}" />
+		<classes>
+			<class name="cucumber.RunCucumberTest" />
+		</classes>
+	</test>
+</suite>
