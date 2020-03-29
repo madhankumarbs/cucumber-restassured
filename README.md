@@ -22,4 +22,4 @@ This project is POC for an automated regression done on REST Services Using REST
 Sample:
 	mvn clean install -Dtest.ENV=int -Dtestgroup=SmokeTest -Dapiver=V2
  
-Please  *comment* for any help/information regarding this POC
+Please  *comment* for any help/information regarding this POC.
